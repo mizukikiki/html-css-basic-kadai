@@ -3,7 +3,7 @@
 
 <head>
   <title>SocialTech</title>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
   <meta name="description" content="SocialTechはEdTech業界のリーディングカンパニーを目指します">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
@@ -11,24 +11,49 @@
 
 <body>
   <header>
-    <a href="index.html" id="logo"><img src="images\logo.png" alt="トップページに戻る"></a>
+    <a href="index.html" id="logo"><img src="images/logo.png" alt="トップページに戻る"></a>
     <nav id="nav-pc">
       <a href="mission.html">MISSION</a>
       <a href="product.html">PRODUCT</a>
       <a href="index.html#aboutus">ABOUT US</a>
       <a href="index.html#vision">VISION</a>
       <a href="index.html#company">COMPANY</a>
-      <a href="index.html#contact">CONTUCT</a>
-
-
-
+      <a href="index.html#contact">CONTACT</a>
     </nav>
+
+   <img id="menu-sp" src="images\button-menu.png" alt="ナビゲーションを開く" onclick="document.getElementById('nav-sp').style.display = 'block'">
+
+     <nav id="nav-sp">
+      <img id="close" src="images/button-close.png" alt="ナビゲーションを閉じる"
+        onclick="document.getElementById('nav-sp').style.display = 'none'">
+      <a id="logo-sp" href="index.html" onclick="document.getElementById('nav-sp').style.display = 'none'">
+      <img src="images/logo-sp.png" alt="トップページに戻る"></a>
+      <a class="menu" href="mission.html" onclick="document.getElementById('nav-sp').style.display = 'none'">MISSION</a>
+      <a class="menu" href="product.html" onclick="document.getElementById('nav-sp').style.display = 'none'">PRODUCT</a>
+      <a class="menu" href="index.html#aboutus" onclick="document.getElementById('nav-sp').style.display = 'none'">ABOUT
+        US</a>
+      <a class="menu" href="index.html#vision"
+        onclick="document.getElementById('nav-sp').style.display = 'none'">VISION</a>
+      <a class="menu" href="index.html#company"
+        onclick="document.getElementById('nav-sp').style.display = 'none'">COMPANY</a>
+      <a class="menu" href="index.html#contact"
+        onclick="document.getElementById('nav-sp').style.display = 'none'">CONTACT</a>
+
+      <div id="sns">
+        <a href="https://www.facebook.com/sejuku2013"><img src="images\button-facebook.png" alt="Facebookのリンク"></a>
+        <a href="https://twitter.com/samuraijuku"><img src="images\button-twitter.png" alt="Twitterのリンク"></a>
+        <a href="https://www.youtube.com/channel/UCCFOQO5aDK0xXam4cUQXT8g"><img src="images\button-youtube.png"
+            alt="YouTubeのリンク"></a>
+      </div>
+    </nav>
+
+
   </header>
   <main>
     <article>
       <section id="main-visual">
         <div id="main-message">
-          <h1>WORD PEACE</h1>
+          <h1>WORLD PEACE</h1>
           <p>IT教育で世界平和を実現する</p>
         </div>
         <img src="images\index\index-main.png" alt="PCの周りに集まる多国籍の仲間たち">
@@ -40,13 +65,13 @@
             <img id="mission-photo" src="images\index\index-mission.png" alt="屋外のベンチで写真を撮影する多国籍の仲間たち">
             <h3>世界平和の実現</h3>
             <p>
-              人類の悲願である世界平和。世界平和を脅かす様々な社会問題を解決するには、イノベーションをどんどん起こしていく必要があります。SocialTechは、プログラミング教育を通してイノベーターを輩出することで、世界平和という大きなテーマに挑んでいきます。
+              人類の悲願である世界平和。世界平和を脅かす様々な社会問題を解決するためには、イノベーションをどんどん起こしていく必要があります。SocialTechは、プログラミング教育を通してイノベーターを輩出することで、世界平和という大きなテーマに挑んでいきます。
             </p>
           </div>
           <div>
             <img id="s2dgs" src="images\index\s2dgs.png" alt="S2DGs">
-            <h3>S2Gsの実現</h3>
-            <p>国連が掲げる「Sustainable Development Goals（持続可能な開発目標）」にい含まれる17つのグローバル目標のうち、以下の5つの目標の実現をミッションとしてサービスを展開しています。
+            <h3>S2DGsの実現</h3>
+            <p>国連が掲げる「Sustainable Development Goals（持続可能な開発目標）」に含まれる17つのグローバル目標のうち、以下の5つの目標の実現をミッションとしてサービスを展開しています。
             </p>
             <a href="mission.html">
               <img src="images\button-more.png" alt="もっとみる">
@@ -64,16 +89,16 @@
               <div class="product-explain">
                 <span>MAN TO MAN</span>
                 <h3>プログラミング教育</h3>
-                <p>2013年より日本で唯一の専属講師によるマンツーマンのプログラミングレッスンの開始。AI/人工知能やウェブデザインの学習も可能です。</p>
+                <p>2013年より日本で唯一の専属講師によるマンツーマンのプログラミングレッスンを開始。AI/人工知能やウェブデザインの学習も可能です。</p>
               </div>
             </div>
 
             <div>
-              <img class="photo-photo" src="images\index\index-career.png" alt="笑顔で話し合う2人の男性">
+              <img class="product-photo" src="images\index\index-career.png" alt="笑顔で話し合う2人の男性">
               <div class="product-explain">
                 <span>CAREER</span>
                 <h3>人材紹介事業</h3>
-                <p>エンジニアへの転職に特化した履歴書や職務の経歴書のアドバイスや面接対策を行い、豊富な求人の中から最適なキャリア選択を支援します。</p>
+                <p>エンジニアへの転職に特化した履歴書や職務経歴書のアドバイスや面接対策を行い、豊富な求人の中から最適なキャリア選択を支援します。</p>
               </div>
             </div>
           </div>
@@ -138,10 +163,10 @@
             </tr>
             <tr>
               <td>
-              </td>>
+              </td>
               <td>
                 <p class="culture-description">
-                  会社全体を1つの生命体として捉え、お互いが深く結びついた一段階層型組織として部署として部署・チーム関係なく課題解決をできる組織を目指しています。
+                  会社全体を1つの生命体として捉え、お互いが深く結びついた一階層型組織として部署・チーム関係なく課題解決をできる組織を目指しています。
                 </p>
               </td>
             </tr>
@@ -210,7 +235,7 @@
             <span>
               <h4>BE GENTLE</h4>
               <h5>「優しくない」をなくす</h5>
-              <p>社会を優しくしていきます。自分、家族、同僚、顧客、他人、全ての人に優しくしていることを心がけます。</p>
+              <p>社会をすこしずつ優しくしていきます。自分、家族、同僚、顧客、他人、全ての人に優しくしていることを心がけます。</p>
             </span>
           </div>
           <div class="vision-box">
@@ -226,32 +251,32 @@
             <span>
               <h4>ZTI</h4>
               <h5>絶対的当事者意識</h5>
-              <p>役者や役割に応じた相対的な当事者意識ではなく、自身の身で起こることすべてに対する絶対的な当事者意識を持ちます。</p>
+              <p>役割や役割に応じた相対的な当事者意識ではなく、自身の身で起こることすべてに対する絶対的な当事者意識を持ちます。</p>
             </span>
           </div>
         </div>
       </section>
-      
+
       <section id="cases">
         <h2 class="index-h2">CASES</h2>
         <ul>
 
           <li id="case-card">
-            <img src="images\index\case-1.png"  class="case-img">
+            <img src="images\index\case-1.png" class="case-img">
             <div class="case-info">
               <h3 class="case-name">〇〇〇〇株式会社様</h3>
               <p class="case-content">新規プロジェクトでのIT人材サポート</p>
             </div>
           </li>
 
-          <li  id="case-card">
+          <li id="case-card">
             <img src="images\index\case-2.png" alt="Pcでコンテンツを見る" class="case-img">
             <div class="case-info">
               <h3 class="case-name">合併会社△△△△様</h3>
               <p class="case-content">新卒研修での個人学習コンテンツの活用</p>
             </div>
           </li>
-          <li  id="case-card">
+          <li id="case-card">
             <img class="case-img" src="images\index\case-3.png" alt="社内研修中の会議室">
             <div class="case-info">
               <h3 class="case-name">●●●●工業様</h3>
